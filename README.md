@@ -1,2 +1,7 @@
-# Big-dog-big-dog-bark-bark-bark
-Big dog, big dog, bark bark bark
+**#大狗Tap**
+点一点，敲节奏。
+
+**Windows** 下载 exe 双击就玩。
+**Android** 装个 APK，点屏幕开始。
+
+源码开源，离线可用，无广告。
