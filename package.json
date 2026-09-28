@@ -1,0 +1,52 @@
+{
+  "name": "yuexuan-dagou-tap",
+  "version": "1.0.0",
+  "description": "大狗Tap — 点击/拖动屏幕的节奏音效玩具",
+  "main": "electron/main.cjs",
+  "author": "yuexuan",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable",
+    "build:win:dir": "electron-builder --win --dir"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.yuexuan.dagoutap",
+    "productName": "大狗Tap",
+    "artifactName": "YuexuanDaGouTap-${version}-portable.${ext}",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "index.html",
+      "main.js",
+      "audio-data.js",
+      "Image/**/*",
+      "!**/*.map",
+      "!**/.DS_Store"
+    ],
+    "afterPack": "./electron/afterPack.cjs",
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "YuexuanDaGouTap-${version}-portable.${ext}",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "YuexuanDaGouTap-${version}-portable.${ext}"
+    },
+    "compression": "maximum"
+  }
+}
