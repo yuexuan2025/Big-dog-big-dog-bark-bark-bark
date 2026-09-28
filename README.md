@@ -2,11 +2,11 @@
 点一点，敲节奏。
 
 **Windows**
-1. 下载 [`发行版/YuexuanDaGouTap-1.0.0-portable.exe`](发行版/YuexuanDaGouTap-1.0.0-portable.exe)
+1. 下载
 2. 双击运行，点击任意位置开始
 
 **Android**
-1. 下载 [`发行版/YuexuanDaGouTap-1.0.0.apk`](发行版/YuexuanDaGouTap-1.0.0.apk)
+1. 下载
 2. 允许安装未知来源应用后安装
 3. 打开后点一下屏幕解锁音频
 
